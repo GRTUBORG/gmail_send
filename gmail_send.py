@@ -5,8 +5,8 @@ from email.mime.text import MIMEText  # Текст/HTML
 
 print('Внимание! Пока что доступна отправка только с почты Google.')
 addr_from = input('Введите почту отправителя (только gmail): ')
-addr_to = input('Введите почту адресата: ')
 password = input('Введите пароль для почты отправителя: ')
+addr_to = input('Введите почту адресата: ')
 
 msg = MIMEMultipart()  # Создаем сообщение
 msg['From'] = addr_from  # Адресат
